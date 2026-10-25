@@ -137,3 +137,119 @@ test('static: serves app, blocks path traversal', async () => {
   const r = await fetch(base + '/faculty', { redirect: 'manual' });
   assert.equal(r.status, 302);
 });
+
+test('NGO Connect: imported list, state/city search, pagination, and duplicate prevention', async () => {
+  const c = client();
+  const stu = await login('student@campus.edu', 'student123');
+
+  // Verify total approved NGOs count includes the 569 imported NGOs
+  const meta = (await c('/ngo-meta')).body;
+  assert.ok(meta.states.includes('Maharashtra'));
+  assert.ok(meta.states.includes('Madhya Pradesh'));
+  assert.ok(meta.states.length >= 25, 'Should cover Indian states');
+
+  // Search by state and city
+  const mp = (await c('/ngos?state=Madhya Pradesh&limit=50')).body;
+  assert.ok(mp.total >= 30);
+  assert.ok(mp.items.every((n) => n.state === 'Madhya Pradesh'));
+
+  // Search by head name
+  const headSearch = (await c('/ngos?q=Mahesh Kinth')).body;
+  assert.ok(headSearch.total >= 1);
+  assert.equal(headSearch.items[0].name, 'AADHAR FOUNDATION');
+  assert.equal(headSearch.items[0].head_name, 'ER. Mahesh Kinth');
+
+  // Pagination test
+  const p1 = (await c('/ngos?limit=10&offset=0')).body;
+  const p2 = (await c('/ngos?limit=10&offset=10')).body;
+  assert.equal(p1.items.length, 10);
+  assert.equal(p2.items.length, 10);
+  assert.notEqual(p1.items[0].id, p2.items[0].id);
+
+  // Duplicate submission check
+  const dupSubmission = {
+    name: 'AADHAR FOUNDATION',
+    state: 'Madhya Pradesh',
+    city: 'Chhindwara',
+    description: 'Duplicate test',
+    categories: ['disability']
+  };
+  const dupRes = await stu('/ngos', { method: 'POST', body: dupSubmission });
+  assert.equal(dupRes.status, 409, 'Duplicate submission should return HTTP 409');
+});
+
+test('Campus Directory: buildings, hierarchical navigation, official codes, faculty association', async () => {
+  const c = client();
+
+  // 1. Buildings listing (12 PCCOE buildings)
+  const blds = (await c('/campus/buildings')).body;
+  assert.ok(blds.length >= 12, 'Must have at least 12 PCCOE buildings');
+  const b9 = blds.find((b) => b.name === 'Building 9');
+  assert.ok(b9);
+  assert.ok(b9.room_count >= 35, 'Building 9 should have all rooms parsed from directory');
+  assert.ok(b9.faculty_count >= 50, 'Building 9 faculty count');
+
+  // 2. Building 9 details & floor navigation
+  const b9Detail = (await c(`/campus/buildings/${b9.id}`)).body;
+  assert.ok(b9Detail.rooms.length >= 35);
+  const floor1Rooms = b9Detail.rooms.filter((r) => r.floor === 1);
+  assert.ok(floor1Rooms.length > 0);
+
+  // 3. Room details with official suffix and faculty associations
+  const civilHodRoom = b9Detail.rooms.find((r) => r.room_code === '9104');
+  assert.ok(civilHodRoom);
+  assert.equal(civilHodRoom.official_code, '9104 HO');
+  assert.equal(civilHodRoom.suffix, 'HO');
+  assert.equal(civilHodRoom.type, 'Faculty cabin or office');
+  assert.equal(civilHodRoom.is_bookable, 0);
+
+  // Check room detail API for 9104
+  const room9104 = (await c(`/campus/rooms/${civilHodRoom.id}`)).body;
+  assert.ok(room9104.faculty.some((f) => f.name.includes('Ajay K. Gaikwad')), 'HOD Ajay K. Gaikwad must be associated with 9104');
+
+  // Check room 9102 (Data Structures Lab)
+  const dsLab = b9Detail.rooms.find((r) => r.room_code === '9102');
+  assert.ok(dsLab);
+  assert.equal(dsLab.official_code, '9102 LA');
+  assert.equal(dsLab.suffix, 'LA');
+  assert.equal(dsLab.type, 'Laboratory');
+
+  // 4. Faculty Directory API
+  const facultyList = (await c('/campus/faculty')).body;
+  assert.equal(facultyList.length, 228, 'Should have 228 faculty members');
+  const shweta = facultyList.find((f) => f.name.includes('Shweta V. Patil'));
+  assert.ok(shweta);
+  assert.equal(shweta.room_code, '9101');
+  assert.equal(shweta.building, 'Building 9');
+
+  // 5. Global Campus Search
+  const searchResult = (await c('/campus/search?q=9104')).body;
+  assert.ok(searchResult.rooms.some((r) => r.room_code === '9104'));
+  const searchFac = (await c('/campus/search?q=Pravin Game')).body;
+  assert.ok(searchFac.faculty.some((f) => f.name.includes('Pravin Game')));
+});
+
+test('Campus Booking: restricted rooms and unconfigured rooms cannot be booked', async () => {
+  const stu = await login('student@campus.edu', 'student123');
+  const c = client();
+  const date = futureSunday();
+
+  // Find a restricted room (e.g. 9104 HO or Examination Cell)
+  const rooms = (await c('/campus/rooms')).body;
+  const restrictedRoom = rooms.find((r) => r.is_bookable === 0);
+  assert.ok(restrictedRoom);
+
+  // Attempt to book restricted room
+  const res1 = await stu('/bookings', {
+    method: 'POST',
+    body: { room_id: restrictedRoom.id, date, start_h: 10, end_h: 11, purpose: 'Unauthorized attempt' }
+  });
+  assert.equal(res1.status, 400, 'Restricted facility booking must be rejected with 400');
+  assert.match(res1.body.error, /restricted facility/i);
+
+  // Check unconfigured availability cells
+  const avail = (await c(`/availability?date=${date}`)).body;
+  const unconfiguredCellRoom = avail.rooms.find((r) => r.id === restrictedRoom.id);
+  assert.ok(unconfiguredCellRoom);
+  assert.equal(unconfiguredCellRoom.cells[0].s, 'blocked');
+});

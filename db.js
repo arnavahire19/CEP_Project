@@ -3,6 +3,7 @@ import { randomBytes, scryptSync, timingSafeEqual } from 'node:crypto';
 import { mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { CITIES, NGOS, SCHEMES, ROOMS, COURSES, CAMERAS } from './seed-data.js';
+import { seedCampusAndNgos } from './scripts/seed-campus-directory.js';
 
 export const TZ = process.env.TZ_CAMPUS || 'Asia/Kolkata';
 export const HOURS = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]; // slot h = h:00-(h+1):00
@@ -102,6 +103,8 @@ export function availability(date, { user = null, excludeEvent = 0 } = {}) {
     cells: HOURS.map((h) => {
       const cell = (s, label = '') => ({ h, s, label });
       if (r.status === 'maintenance') return cell('blocked', 'Maintenance');
+      if (r.is_bookable === 0) return cell('blocked', r.booking_restriction || 'Restricted');
+      if (r.has_timetable === 0) return cell('unconfigured', 'Availability not configured');
       const c = tt.find((x) => x.room_id === r.id && x.start_h <= h && h < x.end_h);
       if (c) return cell('class', c.title);
       const e = ev.find((x) => x.room_id === r.id && toMin(x.start_time) < (h + 1) * 60 && toMin(x.end_time) > h * 60);
@@ -174,3 +177,6 @@ if (!db.prepare('SELECT 1 FROM rooms LIMIT 1').get()) {
   db.exec('COMMIT');
   if (process.env.SEED_DEMO !== '0') console.log('Seeded demo accounts: admin@campus.edu / admin123, faculty@campus.edu / faculty123, student@campus.edu / student123 -- change before real use.');
 }
+
+// Ensure full campus directory (buildings, rooms, faculty) and verified NGOs are seeded
+seedCampusAndNgos(db);

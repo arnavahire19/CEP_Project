@@ -18,12 +18,22 @@ export async function campus() {
   const free = avail.rooms.filter((r) => at(r) === 'free');
   const busy = avail.rooms.filter((r) => ['class', 'booked', 'event'].includes(at(r)));
   view(html`
-    <div class="page-head"><div class="eyebrow">Campus</div><h1>What's happening on campus</h1><p>Events, classroom availability and room booking in one place.</p></div>
+    <div class="page-head row between wrap">
+      <div>
+        <div class="eyebrow">Campus</div>
+        <h1>What's happening on campus</h1>
+        <p>Classroom & cabin directory, live room availability, events and booking in one place.</p>
+      </div>
+      <div class="row gap">
+        <a class="btn ghost" href="#/campus/directory">${icon('building')}Campus Directory</a>
+        <a class="btn" href="#/campus/search">${icon('search')}Find Classroom / Cabin</a>
+      </div>
+    </div>
     <div class="stats">
+      ${stat('building', stats.buildings ?? '12', 'campus buildings', '#/campus/directory')}
       ${stat('check', stats.open ? free.length : '–', stats.open ? 'rooms free right now' : 'campus closed (8 AM – 6 PM)', '#/rooms')}
-      ${stat('clock', stats.open ? busy.length : '–', 'rooms in use right now', '#/rooms')}
+      ${stat('user', stats.faculty ?? '228', 'faculty cabins mapped', '#/campus/faculty')}
       ${stat('calendar', stats.upcoming_events, 'upcoming events', '#/events')}
-      ${stat('building', stats.rooms, 'bookable rooms', '#/rooms')}
     </div>
     <div class="two-col even">
       <section class="card"><div class="row between"><h2>${icon('calendar')}Upcoming events</h2><a class="btn link" href="#/events">All events</a></div>
@@ -31,7 +41,10 @@ export async function campus() {
         ${events.length ? '' : empty('No upcoming events.', 'calendar')}</section>
       <section class="card"><h2>${icon('ticket')}Free right now</h2>
         ${stats.open ? (free.length ? html`<ul class="tags">${free.slice(0, 14).map((r) => html`<li>${r.name} <span class="muted">· ${r.capacity}</span></li>`)}</ul>` : empty('Every room is in use this hour.', 'clock')) : empty('Rooms can be booked between 8 AM and 6 PM.', 'clock')}
-        <div style="margin-top:16px"><a class="btn" href="#/rooms">View availability and book ${icon('right')}</a></div></section>
+        <div style="margin-top:16px" class="row gap">
+          <a class="btn" href="#/rooms">Book a room ${icon('right')}</a>
+          <a class="btn ghost" href="#/campus/directory">Building directory</a>
+        </div></section>
     </div>`);
 }
 

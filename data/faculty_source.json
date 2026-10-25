@@ -1,0 +1,4106 @@
+[
+  {
+    "id": 1,
+    "name": "Mrs. Shweta V. Patil",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9101",
+    "room_id": 282,
+    "room_name": "Faculty Cabin 9101",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 2,
+    "name": "Dr. Puja P. More",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9101",
+    "room_id": 282,
+    "room_name": "Faculty Cabin 9101",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 3,
+    "name": "Dr. Pravin Game",
+    "designation": "Professor / Faculty",
+    "department": "Computer",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9102",
+    "room_id": 107,
+    "room_name": "Data Structures Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 4,
+    "name": "Dr. Ajay K. Gaikwad",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9104",
+    "room_id": 108,
+    "room_name": "Civil HOD office",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 5,
+    "name": "Mrs. Jayashree Changade",
+    "designation": "Assistant Professor",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9105",
+    "room_id": 283,
+    "room_name": "Faculty Cabin 9105",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Kanchan Dhapekar",
+    "designation": "Assistant Professor",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9105",
+    "room_id": 283,
+    "room_name": "Faculty Cabin 9105",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 7,
+    "name": "Mrs. Namita Sane",
+    "designation": "Assistant Professor",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9105",
+    "room_id": 283,
+    "room_name": "Faculty Cabin 9105",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 8,
+    "name": "Dr. Shilpa Motegaonkar",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9107",
+    "room_id": 109,
+    "room_name": "Fluid Mechanics Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 9,
+    "name": "Mrs. Gauri V. Phadtare",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9112",
+    "room_id": 110,
+    "room_name": "Heat Transfer",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 10,
+    "name": "Dr. Sanjay P. Salve",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical, BVOC",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9113",
+    "room_id": 111,
+    "room_name": "Refrigeration and Air Conditioning",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 11,
+    "name": "Dr. Pravin Kale",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9114",
+    "room_id": 112,
+    "room_name": "Mechanical HOD Office",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 12,
+    "name": "Mrs. Rita Pimpalkar",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9115",
+    "room_id": 284,
+    "room_name": "Faculty Cabin 9115",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 13,
+    "name": "Mr. Jitendra D. Ganeshkar",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 1,
+    "room_code": "9115",
+    "room_id": 284,
+    "room_name": "Faculty Cabin 9115",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 14,
+    "name": "Dr. Suresh Nama",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9203",
+    "room_id": 114,
+    "room_name": "Geotechnical Engineering Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 15,
+    "name": "Dr. Shailendra P. Banne",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9203",
+    "room_id": 114,
+    "room_name": "Geotechnical Engineering Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 16,
+    "name": "Mr. Sagar R Wankhede",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9205",
+    "room_id": 285,
+    "room_name": "Faculty Cabin 9205",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 17,
+    "name": "Mr. Vikram K Aher",
+    "designation": "Assistant Professor",
+    "department": "Mechanical, BVOC",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9205",
+    "room_id": 285,
+    "room_name": "Faculty Cabin 9205",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 18,
+    "name": "Mr. Ishan R. Sathone",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9205",
+    "room_id": 285,
+    "room_name": "Faculty Cabin 9205",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 19,
+    "name": "Dr. Sandip T. Mali",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9208",
+    "room_id": 115,
+    "room_name": "Environmental Engineering Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 20,
+    "name": "Mr. Tanmay Khambekar",
+    "designation": "Assistant Professor",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9208",
+    "room_id": 115,
+    "room_name": "Environmental Engineering Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 21,
+    "name": "Dr. Narendra R Deore",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9215",
+    "room_id": 116,
+    "room_name": "Model Based systems Engineering Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 22,
+    "name": "Dr. Padmakar A Deshmukh",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9215",
+    "room_id": 116,
+    "room_name": "Model Based systems Engineering Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 23,
+    "name": "Mrs. Jayashri P Wagh",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9216",
+    "room_id": 286,
+    "room_name": "Faculty Cabin 9216",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 24,
+    "name": "Dr. Sagar R. Wankhede",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9216",
+    "room_id": 286,
+    "room_name": "Faculty Cabin 9216",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 25,
+    "name": "Dr. Masnaji Nukulwar",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical, BVOC",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9216",
+    "room_id": 286,
+    "room_name": "Faculty Cabin 9216",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 26,
+    "name": "Dr. Ajay D Pingale",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9216",
+    "room_id": 286,
+    "room_name": "Faculty Cabin 9216",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 27,
+    "name": "Mr. Laxman Awadhani",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9217",
+    "room_id": 117,
+    "room_name": "Theory of Machine and Mechanism",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 28,
+    "name": "Dr. N Vivekanandan",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9218",
+    "room_id": 118,
+    "room_name": "Dynamics of Machinery",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 29,
+    "name": "Dr. R S. Chaudhari",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9307",
+    "room_id": 119,
+    "room_name": "Survey Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 30,
+    "name": "Mr. Atul .S Kashid",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9316",
+    "room_id": 122,
+    "room_name": "Elements of Mechanical Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 31,
+    "name": "Mr. Gaffar G. Momin",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 32,
+    "name": "Dr. Mrs. N.A. Mandhere",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 33,
+    "name": "Dr. Raju Bhosale",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 34,
+    "name": "Dr. Upendra K. Maurya",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 35,
+    "name": "Dr. Govind S. Waghmare",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 36,
+    "name": "Dr. Rahul A. Mali",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 37,
+    "name": "Dr. Mahadev U. Madgule",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical, BVOC",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9317",
+    "room_id": 287,
+    "room_name": "Faculty Cabin 9317",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 38,
+    "name": "Mrs. Varsharani Gaikhe",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 3,
+    "room_code": "9318",
+    "room_id": 123,
+    "room_name": "Material Science and Metallurgy",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 39,
+    "name": "Mr. Nikhil J. Surwade",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9404",
+    "room_id": 124,
+    "room_name": "System Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 40,
+    "name": "Dr. Jayesh Chordiya",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9404",
+    "room_id": 124,
+    "room_name": "System Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 41,
+    "name": "Dr. C. L. Ladekar",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 42,
+    "name": "Dr. Abhijeet N. Kore",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical, BVOC",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 43,
+    "name": "Mr. Nilesh .V. Gaikwad",
+    "designation": "Assistant Professor",
+    "department": "Mechanical, BVOC",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 44,
+    "name": "Mr. Shriyash. S. Shinde",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 45,
+    "name": "Mr. Amol V. Suryavanshi",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 46,
+    "name": "Mr. Chandan R. Ingole",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 47,
+    "name": "Mr. Hemantkumar. H. Kadam",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 4,
+    "room_code": "9414",
+    "room_id": 288,
+    "room_name": "Faculty Cabin 9414",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 48,
+    "name": "Dr. Dhirajkumar S. Lal",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 5,
+    "room_code": "9503",
+    "room_id": 131,
+    "room_name": "PG Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 49,
+    "name": "Dr. Vinay A. Rangari",
+    "designation": "Professor / Faculty",
+    "department": "Civil",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 5,
+    "room_code": "9503",
+    "room_id": 131,
+    "room_name": "PG Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Civil"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 50,
+    "name": "Dr. Mrs. Jaya Goyal",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 5,
+    "room_code": "9511",
+    "room_id": 133,
+    "room_name": "PG Heat Power Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 51,
+    "name": "Dr. Abhay B. Lingayat",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 5,
+    "room_code": "9511",
+    "room_id": 133,
+    "room_name": "PG Heat Power Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 52,
+    "name": "Mr. A. A. Panchwadkar",
+    "designation": "Assistant Professor",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 5,
+    "room_code": "9512",
+    "room_id": 134,
+    "room_name": "PG Design Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 53,
+    "name": "Dr. S. B. Matekar",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 5,
+    "room_code": "9512",
+    "room_id": 134,
+    "room_name": "PG Design Engineering",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 54,
+    "name": "Dr. Rahul A. Gujar",
+    "designation": "Professor / Faculty",
+    "department": "Mechanical",
+    "building": "Building 8",
+    "building_id": 7,
+    "floor": 2,
+    "room_code": "8203",
+    "room_id": 137,
+    "room_name": "Mechatronics and Automation Centre",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 55,
+    "name": "Mrs. Kavita Kolpe",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 0,
+    "room_code": "9001",
+    "room_id": 101,
+    "room_name": "Programming Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 56,
+    "name": "Mr. Ramkrishna Vadali",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 0,
+    "room_code": "9006",
+    "room_id": 106,
+    "room_name": "Computer Centre Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 57,
+    "name": "Mr. Ganesh Deshmukh",
+    "designation": "Assistant Professor",
+    "department": "Computer Regional",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9216",
+    "room_id": 286,
+    "room_name": "Faculty Cabin 9216",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer Regional"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 58,
+    "name": "Mr. Atul Pawar",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 9",
+    "building_id": 8,
+    "floor": 2,
+    "room_code": "9216",
+    "room_id": 286,
+    "room_name": "Faculty Cabin 9216",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 59,
+    "name": "Dr. Umesh Potdar",
+    "designation": "Professor / Faculty",
+    "department": "BVOC, Mechanical",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6002",
+    "room_id": 289,
+    "room_name": "Faculty Cabin 6002",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "BVOC, Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 60,
+    "name": "Mr. Kishor G. Malokar",
+    "designation": "Assistant Professor",
+    "department": "BVOC, Mechanical",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6002",
+    "room_id": 289,
+    "room_name": "Faculty Cabin 6002",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "BVOC, Mechanical"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 61,
+    "name": "Dr. Manish M. Narkhede",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6012",
+    "room_id": 151,
+    "room_name": "PCB Design Unit",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 62,
+    "name": "Mr. P. N. Maldhure",
+    "designation": "Assistant Professor",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6013",
+    "room_id": 152,
+    "room_name": "Digital Signals And Processing Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 63,
+    "name": "Mrs. Archana Bhamare",
+    "designation": "Assistant Professor",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6013",
+    "room_id": 152,
+    "room_name": "Digital Signals And Processing Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 64,
+    "name": "Mrs. Sonali Sawant",
+    "designation": "Assistant Professor",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6014",
+    "room_id": 153,
+    "room_name": "Embedded System Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 65,
+    "name": "Dr. Swati P. Jagtap",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6014",
+    "room_id": 153,
+    "room_name": "Embedded System Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 66,
+    "name": "Dr. Sunil Tade",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 0,
+    "room_code": "6014",
+    "room_id": 153,
+    "room_name": "Embedded System Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 67,
+    "name": "Prof. Namrata Gawande",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6104",
+    "room_id": 154,
+    "room_name": "Object Oriented Programming Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 68,
+    "name": "Dr. Madhura Kalbhor",
+    "designation": "Professor / Faculty",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6104",
+    "room_id": 154,
+    "room_name": "Object Oriented Programming Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 69,
+    "name": "Dr. Mubin Tamboli",
+    "designation": "Professor / Faculty",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6104",
+    "room_id": 154,
+    "room_name": "Object Oriented Programming Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 70,
+    "name": "Ms. Kavita Kolpe",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 71,
+    "name": "Ms. Harsha Talele",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 72,
+    "name": "Dr. Amruta Mahajan",
+    "designation": "Professor / Faculty",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 73,
+    "name": "Dr. Asmita Manna",
+    "designation": "Professor / Faculty",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 74,
+    "name": "Mrs. Shriya Mundhe",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 75,
+    "name": "Mrs. Rohini Tambe",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 76,
+    "name": "Mrs. Deepali Jawale",
+    "designation": "Assistant Professor",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6108",
+    "room_id": 158,
+    "room_name": "Faculty Cabin Discussion Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 77,
+    "name": "Dr. Anjali A. Shrivastav",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6109",
+    "room_id": 159,
+    "room_name": "VLSI Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 78,
+    "name": "Dr. Varsha Bhendre",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6109",
+    "room_id": 159,
+    "room_name": "VLSI Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 79,
+    "name": "Mrs. Neena P. Bendre",
+    "designation": "Assistant Professor",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6109",
+    "room_id": 159,
+    "room_name": "VLSI Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 80,
+    "name": "Dr. Rashmi V. Patil",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6110",
+    "room_id": 160,
+    "room_name": "Advanced VLSI And Embedded Systems Lab (MODROB) / Ph.D. Research Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 81,
+    "name": "Dr. Deepti Khurge",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6110",
+    "room_id": 160,
+    "room_name": "Advanced VLSI And Embedded Systems Lab (MODROB) / Ph.D. Research Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 82,
+    "name": "Dr. Jyoti Kulkarni",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6110",
+    "room_id": 160,
+    "room_name": "Advanced VLSI And Embedded Systems Lab (MODROB) / Ph.D. Research Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 83,
+    "name": "Mrs. Neena Sonar",
+    "designation": "Assistant Professor",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6110",
+    "room_id": 160,
+    "room_name": "Advanced VLSI And Embedded Systems Lab (MODROB) / Ph.D. Research Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 84,
+    "name": "Dr. Varsha Harpale",
+    "designation": "Professor / Faculty",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 85,
+    "name": "Dr Swati V. Shinde",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 86,
+    "name": "Dr Sujata R. Kolhe",
+    "designation": "",
+    "department": "Computer Regional",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer Regional"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 87,
+    "name": "Mr Srinivas Ambala",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 88,
+    "name": "Dr Meghana Lokhande",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 89,
+    "name": "Dr Anuradha D. Thakare",
+    "designation": "",
+    "department": "AIML",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "AIML"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 90,
+    "name": "Mrs Reena Kharat",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 91,
+    "name": "Mrs Smita Khairnar",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 92,
+    "name": "Mrs Bodireddy Mahalakshmi",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 93,
+    "name": "Mr Anand Birajdar",
+    "designation": "",
+    "department": "Computer Regional",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer Regional"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 94,
+    "name": "Ms Pooja Sujit Kute",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 95,
+    "name": "Mrs Priya Surana",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 96,
+    "name": "Dr Sarika Deokate",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 97,
+    "name": "Mrs Harshida Mhaske",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 98,
+    "name": "Mrs Madhuri Suryavanshi",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 99,
+    "name": "Mrs Chayya Nayak",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 100,
+    "name": "Ms Ashwini Matange",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 101,
+    "name": "Mrs Shradha Ovale",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 102,
+    "name": "Mrs Namrata Gawande",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 103,
+    "name": "Mrs Dhanashree Patil",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 104,
+    "name": "Prof Sushma Vispute",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 105,
+    "name": "Mrs Sonal Gore",
+    "designation": "",
+    "department": "AIML",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "AIML"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 106,
+    "name": "Mrs Archana Kadam",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 107,
+    "name": "Mrs Shailaja Pede",
+    "designation": "",
+    "department": "AIML",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "AIML"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 108,
+    "name": "Dr Rachana Yogesh Patil",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 109,
+    "name": "Mrs Prajakta Ghogare",
+    "designation": "",
+    "department": "Computer Regional",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer Regional"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 110,
+    "name": "Prof G. B. Sambare",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 111,
+    "name": "Prof R. A. Patil",
+    "designation": "",
+    "department": "Information Technology",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 112,
+    "name": "Dr Sonali D. Patil",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 113,
+    "name": "Mrs Suvarna Kadam",
+    "designation": "",
+    "department": "Information Technology",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 114,
+    "name": "Dr Prakash V. Sontakke",
+    "designation": "",
+    "department": "Electronics and Telecommunications, BVOC",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 1,
+    "room_code": "6111",
+    "room_id": 290,
+    "room_name": "Faculty Cabin 6111",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications, BVOC"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 115,
+    "name": "Dr Ganesh R. Rahate",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 116,
+    "name": "Mr Swapnil Ayane",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 117,
+    "name": "Dr Rashmi V. Patil",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 118,
+    "name": "Mr Kapil Kotangale",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 119,
+    "name": "Mrs Ashwini Mhaske",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 120,
+    "name": "Dr Mahesh T. Kolte",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 121,
+    "name": "Dr Sheetal U. Bhandari",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 122,
+    "name": "Prof Dr Kishor S. Kinage",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 123,
+    "name": "Mrs Sharda M. Dhavale",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 124,
+    "name": "Dr Satyashil D. Nagarale",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 125,
+    "name": "Mrs Veena Kulkarni",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 126,
+    "name": "Mrs Gauri Sandbhor",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6317",
+    "room_id": 184,
+    "room_name": "Digital Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 127,
+    "name": "Mr Ajjay Gaadhe",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6318",
+    "room_id": 185,
+    "room_name": "Artificial Intelligence And Machine Learning Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 128,
+    "name": "Dr Ujjawal R. Shinde",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6318",
+    "room_id": 185,
+    "room_name": "Artificial Intelligence And Machine Learning Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 129,
+    "name": "Dr Rajani P. K",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6318",
+    "room_id": 185,
+    "room_name": "Artificial Intelligence And Machine Learning Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 130,
+    "name": "Mrs Seema Deoghare",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6319",
+    "room_id": 186,
+    "room_name": "Electronics Devices And Circuit Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 131,
+    "name": "Mrs Mrunalini Bhandarkar",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6319",
+    "room_id": 186,
+    "room_name": "Electronics Devices And Circuit Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 132,
+    "name": "Dr Ashwini S. Shinde",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6319",
+    "room_id": 186,
+    "room_name": "Electronics Devices And Circuit Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 133,
+    "name": "Ms Sneha Dhaware",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 3,
+    "room_code": "6319",
+    "room_id": 186,
+    "room_name": "Electronics Devices And Circuit Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 134,
+    "name": "Ms Vithika Sidhabhatti",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6404",
+    "room_id": 191,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 135,
+    "name": "Ms Rebecca George",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6404",
+    "room_id": 191,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 136,
+    "name": "Ms Prajakta Pendam",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6404",
+    "room_id": 191,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 137,
+    "name": "Ms Shamal Kendre",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6404",
+    "room_id": 191,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 138,
+    "name": "Dr Kaustubh Jadhav",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6404",
+    "room_id": 191,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 139,
+    "name": "Dr Sandip Jagadale",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6407",
+    "room_id": 192,
+    "room_name": "Chemistry Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 140,
+    "name": "Ms Falguni Bhavsar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6407",
+    "room_id": 192,
+    "room_name": "Chemistry Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 141,
+    "name": "Dr Amol Kharche",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6408",
+    "room_id": 193,
+    "room_name": "Chemistry Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 142,
+    "name": "Mr Rajendra Jagtap",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6408",
+    "room_id": 193,
+    "room_name": "Chemistry Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 143,
+    "name": "Mrs Sujata Bhamare",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 144,
+    "name": "Dr Sushma Parmar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 145,
+    "name": "Mr Dinesh Kute",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 146,
+    "name": "Mr Ganesh Tarte",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 147,
+    "name": "Dr Shaziya Shaikh",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 148,
+    "name": "Dr Neha Sharma",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 149,
+    "name": "Dr Amruta Patil",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 150,
+    "name": "Dr Nishi Gupta",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6410",
+    "room_id": 194,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 151,
+    "name": "Dr Rachana Yogesh Patil",
+    "designation": "",
+    "department": "Computer Regional",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6412",
+    "room_id": 291,
+    "room_name": "Faculty Cabin 6412",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer Regional"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 152,
+    "name": "Dr Sandeep Patil",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6414",
+    "room_id": 195,
+    "room_name": "Faculty Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 153,
+    "name": "Mr Sachin Shinde",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6414",
+    "room_id": 195,
+    "room_name": "Faculty Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 154,
+    "name": "Dr Jayashri Lohar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6415",
+    "room_id": 196,
+    "room_name": "IOT B.Voc",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 155,
+    "name": "Mrs Supriya Vaishnav",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6415",
+    "room_id": 196,
+    "room_name": "IOT B.Voc",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 156,
+    "name": "Mr Bhaskar Awate",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6417",
+    "room_id": 197,
+    "room_name": "Physics Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 157,
+    "name": "Mrs Anjali Sakurkar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6417",
+    "room_id": 197,
+    "room_name": "Physics Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 158,
+    "name": "Dr Mahadev Kadam",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6417",
+    "room_id": 197,
+    "room_name": "Physics Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 159,
+    "name": "Dr Mohit Prasad",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6417",
+    "room_id": 197,
+    "room_name": "Physics Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 160,
+    "name": "Dr Sonali Kale",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6418",
+    "room_id": 198,
+    "room_name": "Physics Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 161,
+    "name": "Dr Arun Khalkar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6418",
+    "room_id": 198,
+    "room_name": "Physics Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 162,
+    "name": "Mr Dattatraya Anarse",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 4,
+    "room_code": "6418",
+    "room_id": 198,
+    "room_name": "Physics Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 163,
+    "name": "Dr Priya Joshi",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6511",
+    "room_id": 292,
+    "room_name": "Faculty Cabin 6511",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 164,
+    "name": "Dr Sanjivini S. Sonar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6514",
+    "room_id": 199,
+    "room_name": "HOD Cabin Multidisciplinary Studies MDS",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 165,
+    "name": "Dr Leena Sharma",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6516",
+    "room_id": 200,
+    "room_name": "HOD Office Applied Science And Humanities",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 166,
+    "name": "Mr Kiran Landge",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6516",
+    "room_id": 200,
+    "room_name": "HOD Office Applied Science And Humanities",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 167,
+    "name": "Ms Pallavi Dhade",
+    "designation": "",
+    "department": "AIML",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6517",
+    "room_id": 201,
+    "room_name": "Artificial Intelligence Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "AIML"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 168,
+    "name": "Mrs Santawana Ingole",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6517",
+    "room_id": 201,
+    "room_name": "Artificial Intelligence Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 169,
+    "name": "Prof Sarika Bartakke",
+    "designation": "",
+    "department": "AIML",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6517",
+    "room_id": 201,
+    "room_name": "Artificial Intelligence Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "AIML"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 170,
+    "name": "Prof Rajesh Lumte",
+    "designation": "",
+    "department": "AIML",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6519",
+    "room_id": 203,
+    "room_name": "Programming Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "AIML"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 171,
+    "name": "Ms Shivani Pandey",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6519",
+    "room_id": 203,
+    "room_name": "Programming Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 172,
+    "name": "Mr Vinayak N. Malabade",
+    "designation": "",
+    "department": "Computer Regional",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6519",
+    "room_id": 203,
+    "room_name": "Programming Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer Regional"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 173,
+    "name": "Mr Sanjay Mapari",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6503",
+    "room_id": 204,
+    "room_name": "Tutorial Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 174,
+    "name": "Mr Rajesh Talekar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6503",
+    "room_id": 204,
+    "room_name": "Tutorial Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 175,
+    "name": "Mrs Manjusha Londhe",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6504",
+    "room_id": 205,
+    "room_name": "Language Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 176,
+    "name": "Dr Ganesh Munde",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6504",
+    "room_id": 205,
+    "room_name": "Language Lab 1",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 177,
+    "name": "Mrs Pooja Potdar",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6505",
+    "room_id": 206,
+    "room_name": "Language Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 178,
+    "name": "Mrs Geetanjali Zambare",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6505",
+    "room_id": 206,
+    "room_name": "Language Lab 2",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 179,
+    "name": "Mrs Ashwini Deshpande",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6506",
+    "room_id": 207,
+    "room_name": "Basic Electrical Engineering Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 180,
+    "name": "Dr Pranjal Jog",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6506",
+    "room_id": 207,
+    "room_name": "Basic Electrical Engineering Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 181,
+    "name": "Mrs Suwarna Shete",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6507",
+    "room_id": 208,
+    "room_name": "Electrical Machine Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 182,
+    "name": "Mrs Priyadarshini Ranbhise",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6507",
+    "room_id": 208,
+    "room_name": "Electrical Machine Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 183,
+    "name": "Mrs Swati Patil",
+    "designation": "",
+    "department": "Applied Science And Humanities",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6508",
+    "room_id": 209,
+    "room_name": "Basic Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Applied Science And Humanities"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 184,
+    "name": "Ms Vaishnavi Pujari",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6508",
+    "room_id": 209,
+    "room_name": "Basic Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 185,
+    "name": "Mrs Sonal Shirke",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6508",
+    "room_id": 209,
+    "room_name": "Basic Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 186,
+    "name": "Mrs Meenakshi Chavan",
+    "designation": "",
+    "department": "Electronics and Telecommunications",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 5,
+    "room_code": "6508",
+    "room_id": 209,
+    "room_name": "Basic Electronics Lab",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Electronics and Telecommunications"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 187,
+    "name": "Mrs Madhuri Suryavanshi",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6203A",
+    "room_id": 293,
+    "room_name": "Faculty Cabin 6203A",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 188,
+    "name": "Mrs Mehzabin Pathan",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6203A",
+    "room_id": 293,
+    "room_name": "Faculty Cabin 6203A",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 189,
+    "name": "Mrs Manisha Pawar",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6203A",
+    "room_id": 293,
+    "room_name": "Faculty Cabin 6203A",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 190,
+    "name": "Mrs Minal Shahakar",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6203B",
+    "room_id": 294,
+    "room_name": "Faculty Cabin 6203B",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 191,
+    "name": "Mrs Shalu Mahajan",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6203B",
+    "room_id": 294,
+    "room_name": "Faculty Cabin 6203B",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 192,
+    "name": "Mr Ganesh Kadam",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6220",
+    "room_id": 210,
+    "room_name": "Computer Engineering Department Library",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 193,
+    "name": "Mr Shailesh Galande",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6220",
+    "room_id": 210,
+    "room_name": "Computer Engineering Department Library",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 194,
+    "name": "Dr Ketan Desale",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6220",
+    "room_id": 210,
+    "room_name": "Computer Engineering Department Library",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 195,
+    "name": "Dr Pooja Bidwai",
+    "designation": "",
+    "department": "Computer",
+    "building": "Building 6",
+    "building_id": 4,
+    "floor": 2,
+    "room_code": "6220",
+    "room_id": 210,
+    "room_name": "Computer Engineering Department Library",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Computer"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 196,
+    "name": "Mrs. Alpana Borse",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 3,
+    "room_code": "5302",
+    "room_id": 249,
+    "room_name": "Project Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 197,
+    "name": "Mr. Rohit Tate",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 3,
+    "room_code": "5302",
+    "room_id": 249,
+    "room_name": "Project Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 198,
+    "name": "Mrs. Sapana Kolambe",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 3,
+    "room_code": "5302",
+    "room_id": 249,
+    "room_name": "Project Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 199,
+    "name": "Mrs. Radha Deoghare",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 3,
+    "room_code": "5305",
+    "room_id": 253,
+    "room_name": "Cloud Computing Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 200,
+    "name": "Mrs. Shweta Devdas",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5403",
+    "room_id": 261,
+    "room_name": "Research Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 201,
+    "name": "Dr. Jayshree Katti",
+    "designation": "HOD of IT",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5408",
+    "room_id": 257,
+    "room_name": "HOD of IT Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 202,
+    "name": "Mrs. Babita Jane",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5410",
+    "room_id": 259,
+    "room_name": "Department Library of Information Technology",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 203,
+    "name": "Mrs. Madhuri Kethari",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5410",
+    "room_id": 259,
+    "room_name": "Department Library of Information Technology",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 204,
+    "name": "Mrs. Rakhi Pagar",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5411",
+    "room_id": 260,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 205,
+    "name": "Mrs. Shradha Tawade",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5411",
+    "room_id": 260,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 206,
+    "name": "Dr. Rajesh Phursule",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5412",
+    "room_id": 262,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 207,
+    "name": "Dr. Maya Bemble",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5412",
+    "room_id": 262,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 208,
+    "name": "Dr. Roshni Raut",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5413",
+    "room_id": 270,
+    "room_name": "Dean International Relations Office",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 209,
+    "name": "Dr. Jaya Dewan",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5414",
+    "room_id": 264,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 210,
+    "name": "Mrs. Sphurti Deshmukh",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5414",
+    "room_id": 264,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 211,
+    "name": "Dr. Harsha Bhute",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5415",
+    "room_id": 266,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 212,
+    "name": "Dr. Rohini Pise",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5416",
+    "room_id": 267,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 213,
+    "name": "Dr. Tanuja Patankar",
+    "designation": "Professor / Faculty",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5416",
+    "room_id": 267,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 214,
+    "name": "Mrs. Sandhya Waghere",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5417",
+    "room_id": 268,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 215,
+    "name": "Mrs. Mukta Jamage",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 4,
+    "room_code": "5417",
+    "room_id": 268,
+    "room_name": "Faculty Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 216,
+    "name": "Mr. Rajkamal C. Sangole",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5007",
+    "room_id": 240,
+    "room_name": "SIG Coordination Office",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 217,
+    "name": "Mr. Prakash K. Ukhalkar",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5007",
+    "room_id": 240,
+    "room_name": "SIG Coordination Office",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 218,
+    "name": "Mrs. Suchita Borkar",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5007",
+    "room_id": 240,
+    "room_name": "SIG Coordination Office",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 219,
+    "name": "Mrs. Anjana Arakerimath",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5006",
+    "room_id": 238,
+    "room_name": "Faculty Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 220,
+    "name": "Mr. Bali Shankar Khurana",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5004",
+    "room_id": 237,
+    "room_name": "Faculty Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 221,
+    "name": "Priyanka Jadhav",
+    "designation": "",
+    "department": "CSE (Artificial Intelligence & Machine learning)",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5003",
+    "room_id": 236,
+    "room_name": "Faculty Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "CSE (Artificial Intelligence & Machine learning)"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 222,
+    "name": "Pranita Chaudhary",
+    "designation": "",
+    "department": "CSE (Artificial Intelligence & Machine learning)",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 0,
+    "room_code": "5002",
+    "room_id": 235,
+    "room_name": "Faculty Room",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "CSE (Artificial Intelligence & Machine learning)"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 223,
+    "name": "Dr. Ashwini Ladekar",
+    "designation": "HOD of MCA",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 2,
+    "room_code": "5201",
+    "room_id": 242,
+    "room_name": "HOD MCA Cabin",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 224,
+    "name": "Mr. Bali Shankar Khurana",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 2,
+    "room_code": "5202",
+    "room_id": 243,
+    "room_name": "Computer Application Lab - A",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 225,
+    "name": "Mrs. Prachiti Ballal",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 2,
+    "room_code": "5202",
+    "room_id": 243,
+    "room_name": "Computer Application Lab - A",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 226,
+    "name": "Mrs. Pradnya Narhede",
+    "designation": "Assistant Professor",
+    "department": "CSE (Artificial Intelligence & Machine learning)",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 2,
+    "room_code": "5205",
+    "room_id": 244,
+    "room_name": "Data Science Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "CSE (Artificial Intelligence & Machine learning)"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 227,
+    "name": "Mrs. Madhuri Kethari",
+    "designation": "Assistant Professor",
+    "department": "Information Technology",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 3,
+    "room_code": "5305",
+    "room_id": 253,
+    "room_name": "Cloud Computing Laboratory",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "Information Technology"
+    ],
+    "verified": 1
+  },
+  {
+    "id": 228,
+    "name": "Mr. Anand A Jain",
+    "designation": "Assistant Professor",
+    "department": "MCA",
+    "building": "Building 5",
+    "building_id": 3,
+    "floor": 2,
+    "room_code": "5203",
+    "room_id": 241,
+    "room_name": "Computer Application Lab -B",
+    "email": "",
+    "phone": "",
+    "subjects": [
+      "MCA"
+    ],
+    "verified": 1
+  }
+]

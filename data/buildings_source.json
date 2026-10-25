@@ -1,0 +1,249 @@
+[
+  {
+    "id": 1,
+    "name": "Building 1",
+    "code": "B1",
+    "description": "PCP Admin Office",
+    "departments": [
+      "PCP Administration",
+      "Fluid Engineering"
+    ],
+    "floors_count": 2,
+    "floors_list": [
+      0,
+      1
+    ],
+    "wing": "",
+    "sort_order": 1
+  },
+  {
+    "id": 2,
+    "name": "Building 3",
+    "code": "B3",
+    "description": "Boys Hostel",
+    "departments": [
+      "Physical Education and Sports",
+      "ART Circle",
+      "NSS",
+      "Hostel Administration"
+    ],
+    "floors_count": 4,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "wing": "",
+    "sort_order": 2
+  },
+  {
+    "id": 3,
+    "name": "Building 5",
+    "code": "B5",
+    "description": "Trust Office, AIML and IT Department",
+    "departments": [
+      "Information Technology",
+      "Artificial Intelligence & Machine Learning",
+      "MCA",
+      "Trust Office",
+      "Administration"
+    ],
+    "floors_count": 6,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wing": "",
+    "sort_order": 3
+  },
+  {
+    "id": 4,
+    "name": "Building 6",
+    "code": "B6",
+    "description": "AS&H, Computer, Computer Regional, ENTC Department",
+    "departments": [
+      "Applied Science & Humanities (AS&H)",
+      "Computer Engineering",
+      "Computer Regional",
+      "Electronics & Telecommunication (E&TC)",
+      "CILL"
+    ],
+    "floors_count": 6,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wing": "",
+    "sort_order": 4
+  },
+  {
+    "id": 5,
+    "name": "Building 7",
+    "code": "B7",
+    "description": "MBA & PBS",
+    "departments": [
+      "MBA",
+      "PBS (Pimpri Chinchwad Business School)"
+    ],
+    "floors_count": 4,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "wing": "",
+    "sort_order": 5
+  },
+  {
+    "id": 6,
+    "name": "Building 7(A)",
+    "code": "B7A",
+    "description": "Old Girls Hostel",
+    "departments": [
+      "Hostel Administration",
+      "Student Accommodation"
+    ],
+    "floors_count": 4,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "wing": "",
+    "sort_order": 6
+  },
+  {
+    "id": 7,
+    "name": "Building 8",
+    "code": "B8",
+    "description": "Architecture Building",
+    "departments": [
+      "Architecture",
+      "Central Workshop",
+      "Mechatronics & Automation"
+    ],
+    "floors_count": 6,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wing": "",
+    "sort_order": 7
+  },
+  {
+    "id": 8,
+    "name": "Building 9",
+    "code": "B9",
+    "description": "Mechanical and Civil Department",
+    "departments": [
+      "Mechanical Engineering",
+      "Civil Engineering",
+      "BVOC"
+    ],
+    "floors_count": 7,
+    "floors_list": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wing": "",
+    "sort_order": 8
+  },
+  {
+    "id": 9,
+    "name": "Building 10",
+    "code": "B10",
+    "description": "New Girls Hostel",
+    "departments": [
+      "Hostel Administration",
+      "Student Accommodation"
+    ],
+    "floors_count": 6,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wing": "",
+    "sort_order": 9
+  },
+  {
+    "id": 10,
+    "name": "Building 11",
+    "code": "B11",
+    "description": "New Computer Department",
+    "departments": [
+      "Computer Science & Engineering",
+      "High Performance Computing"
+    ],
+    "floors_count": 6,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "wing": "",
+    "sort_order": 10
+  },
+  {
+    "id": 11,
+    "name": "Sports Complex",
+    "code": "SPORTS",
+    "description": "Sports Hall",
+    "departments": [
+      "Department of Physical Education and Sports"
+    ],
+    "floors_count": 2,
+    "floors_list": [
+      0,
+      1
+    ],
+    "wing": "",
+    "sort_order": 11
+  },
+  {
+    "id": 12,
+    "name": "PCP Building",
+    "code": "PCP",
+    "description": "Wings A, B, C, D and E",
+    "departments": [
+      "Pharmacy",
+      "Polytechnic",
+      "Applied Sciences"
+    ],
+    "floors_count": 4,
+    "floors_list": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "wing": "Wings A, B, C, D, E",
+    "sort_order": 12
+  }
+]

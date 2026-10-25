@@ -1,6 +1,7 @@
 import { S, $, api, view, html, icon, actions, cleanups, go, toast, formHTML, wireForm, isStaff, app, skeleton, causeIcon, causeHue } from './lib.js';
 import { ngos, ngoDetail, ngoNew, schemes } from './ngo.js';
 import { campus, events, rooms, myBookings } from './campus.js';
+import { campusDirectory, facultyDirectory, campusSearch } from './directory.js';
 import { cameras } from './cameras.js';
 import { facultyLogin, portal } from './portal.js';
 
@@ -11,12 +12,18 @@ async function home() {
   view(html`
     <section class="hero">
       <h1>Do good. <span class="grad">Run campus.</span> One place.</h1>
-      <p class="lead">Find NGOs across India and the government support open to them, and run your college's events, classrooms and room bookings, all in one app.</p>
+      <p class="lead">Find 600+ NGOs across India and government support open to them, navigate PCCOE campus buildings, rooms & faculty cabins, and manage college events and room bookings, all in one app.</p>
       <form class="hero-search" id="hero-search" role="search">
-        <div class="icon-input">${icon('search')}<input name="q" type="search" placeholder="Search NGOs by name, city or cause" aria-label="Search NGOs" autocomplete="off"></div>
+        <div class="icon-input">${icon('search')}<input name="q" type="search" placeholder="Search NGOs by name, city or cause, or rooms (e.g. 9102, 9104 HO)" aria-label="Search" autocomplete="off"></div>
         <button class="btn" type="submit">Search</button>
       </form>
-      <div class="stats-line"><span><b>${st.ngos ?? '–'}</b> NGOs</span><span><b>${st.schemes ?? '–'}</b> schemes</span><span><b>${st.upcoming_events ?? '–'}</b> upcoming events</span><span><b>${st.rooms ?? '–'}</b> bookable rooms</span></div>
+      <div class="stats-line">
+        <span><b>${st.ngos ?? '–'}</b> NGOs</span>
+        <span><b>${st.buildings ?? '12'}</b> Buildings</span>
+        <span><b>${st.total_campus_rooms ?? '200+'}</b> Rooms & Labs</span>
+        <span><b>${st.faculty ?? '228'}</b> Faculty</span>
+        <span><b>${st.upcoming_events ?? '–'}</b> Events</span>
+      </div>
     </section>
 
     <div class="section-title"><h2>Browse NGOs by cause</h2><a class="btn link" href="#/ngos">View all ${icon('right')}</a></div>
@@ -25,22 +32,31 @@ async function home() {
     <div class="section-title"><h2>Two sections, one account</h2></div>
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
       <a class="feature ngo" href="#/ngos"><span class="big-ic">${icon('sprout')}</span><h2>NGO Connect</h2>
-        <p>Discover NGOs by cause, state or distance, and see which schemes, grants and registrations apply to them.</p>
-        <ul><li>${icon('check')}Directory with profiles and contact links</li><li>${icon('check')}${st.schemes ?? ''} government schemes and grants</li><li>${icon('check')}Submit an NGO for listing</li></ul>
+        <p>Discover 600+ verified voluntary organizations by cause, state, city or distance, and see which schemes apply to them.</p>
+        <ul><li>${icon('check')}Directory with contact details & leadership</li><li>${icon('check')}${st.schemes ?? ''} government schemes and grants</li><li>${icon('check')}Submit an NGO for verification</li></ul>
         <span class="go">Explore NGOs ${icon('right')}</span></a>
-      <a class="feature campus" href="#/campus"><span class="big-ic">${icon('cap')}</span><h2>Campus</h2>
-        <p>See what's on, which classrooms are free right now, and book a room in a few taps.</p>
-        <ul><li>${icon('check')}Live classroom availability</li><li>${icon('check')}Slot-based room booking with faculty approval</li><li>${icon('check')}Events with RSVP</li></ul>
-        <span class="go">Open campus ${icon('right')}</span></a>
+      <a class="feature campus" href="#/campus/directory"><span class="big-ic">${icon('cap')}</span><h2>Campus Directory</h2>
+        <p>Find classrooms, laboratories, and faculty cabins across all PCCOE buildings with official room codes.</p>
+        <ul><li>${icon('check')}12 Campus Buildings & floor-by-floor room layouts</li><li>${icon('check')}Faculty cabin directory with 228 faculty</li><li>${icon('check')}Live classroom availability & slot-based booking</li></ul>
+        <span class="go">Explore Campus Directory ${icon('right')}</span></a>
     </div>
 
     <div class="section-title"><h2>Built for everyone on campus</h2></div>
     <div class="grid3">
-      <div class="card role"><span class="avatar">${icon('user')}</span><h3>Students</h3><p>Find causes to volunteer for, RSVP to events and request rooms.</p></div>
-      <div class="card role"><span class="avatar">${icon('book')}</span><h3>Faculty</h3><p>Publish events, manage the timetable, approve bookings and view cameras.</p><a class="btn link" href="#/faculty">Faculty portal</a></div>
-      <div class="card role"><span class="avatar">${icon('shield')}</span><h3>Administrators</h3><p>Moderate NGO listings, manage users, schemes and camera privacy.</p></div>
+      <div class="card role"><span class="avatar">${icon('user')}</span><h3>Students</h3><p>Find causes to volunteer for, locate classrooms, RSVP to events and request rooms.</p></div>
+      <div class="card role"><span class="avatar">${icon('book')}</span><h3>Faculty</h3><p>Locate cabins, publish events, manage the timetable, approve bookings and view cameras.</p><a class="btn link" href="#/faculty">Faculty portal</a></div>
+      <div class="card role"><span class="avatar">${icon('shield')}</span><h3>Administrators</h3><p>Moderate NGO listings, manage campus spaces, users, schemes and camera privacy.</p></div>
     </div>`);
-  $('#hero-search').addEventListener('submit', (e) => { e.preventDefault(); const q = new FormData(e.target).get('q').trim(); go('#/ngos' + (q ? '?q=' + encodeURIComponent(q) : '')); });
+  $('#hero-search').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = new FormData(e.target).get('q').trim();
+    if (!q) return go('#/ngos');
+    if (/^\d{3,4}/.test(q) || /building|lab|room|hod|floor/i.test(q)) {
+      go('#/campus/search?q=' + encodeURIComponent(q));
+    } else {
+      go('#/ngos?q=' + encodeURIComponent(q));
+    }
+  });
 }
 
 // ---------- auth pages ----------
@@ -67,10 +83,23 @@ async function register(params) {
 
 // ---------- router ----------
 const ROUTES = [
-  [/^$/, home, ''], [/^ngos$/, ngos, 'ngo'], [/^ngos\/new$/, ngoNew, 'ngo'], [/^ngos\/(\d+)$/, ngoDetail, 'ngo'], [/^schemes$/, schemes, 'ngo'],
-  [/^campus$/, campus, 'campus'], [/^events$/, events, 'campus'], [/^rooms$/, rooms, 'campus'], [/^my-bookings$/, myBookings, 'campus'],
-  [/^cameras$/, () => cameras(), 'campus'], [/^faculty$/, facultyLogin, 'campus'], [/^portal(?:\/(\w+))?$/, portal, 'campus'],
-  [/^login$/, login, ''], [/^register$/, register, ''],
+  [/^$/, home, ''],
+  [/^ngos$/, ngos, 'ngo'],
+  [/^ngos\/new$/, ngoNew, 'ngo'],
+  [/^ngos\/(\d+)$/, ngoDetail, 'ngo'],
+  [/^schemes$/, schemes, 'ngo'],
+  [/^campus$/, campus, 'campus'],
+  [/^campus\/directory$/, campusDirectory, 'campus'],
+  [/^campus\/faculty$/, facultyDirectory, 'campus'],
+  [/^campus\/search$/, campusSearch, 'campus'],
+  [/^events$/, events, 'campus'],
+  [/^rooms$/, rooms, 'campus'],
+  [/^my-bookings$/, myBookings, 'campus'],
+  [/^cameras$/, () => cameras(), 'campus'],
+  [/^faculty$/, facultyLogin, 'campus'],
+  [/^portal(?:\/(\w+))?$/, portal, 'campus'],
+  [/^login$/, login, ''],
+  [/^register$/, register, ''],
 ];
 let routeSeq = 0;
 async function router() {
@@ -107,10 +136,22 @@ function renderNav(path = '') {
   $('#sections').innerHTML = html`<a href="#/ngos" ${sec === 'ngo' ? html`aria-current="page"` : ''}>${icon('sprout')}NGO Connect</a><a href="#/campus" ${sec === 'campus' ? html`aria-current="page"` : ''}>${icon('cap')}Campus</a>`.s;
   const sub = $('#subnav');
   const items = sec === 'ngo'
-    ? [['ngos', 'Directory', 'grid', /^ngos($|\/\d)/], ['schemes', 'Government schemes', 'landmark', /^schemes/], ['ngos/new', 'Submit an NGO', 'plus', /^ngos\/new/]]
+    ? [
+        ['ngos', 'Directory', 'grid', /^ngos($|\/\d)/],
+        ['schemes', 'Government schemes', 'landmark', /^schemes/],
+        ['ngos/new', 'Submit an NGO', 'plus', /^ngos\/new/]
+      ]
     : sec === 'campus'
-      ? [['campus', 'Overview', 'home', /^campus/], ['events', 'Events', 'calendar', /^events/], ['rooms', 'Rooms & booking', 'ticket', /^rooms/],
-        ...(S.me ? [['my-bookings', 'My bookings', 'list', /^my-bookings/]] : []), ...(isStaff() ? [['cameras', 'Cameras', 'video', /^cameras/], ['portal', 'Portal', 'shield', /^portal/]] : [])]
+      ? [
+          ['campus', 'Overview', 'home', /^campus$/],
+          ['campus/directory', 'Classrooms & Labs', 'building', /^campus\/directory/],
+          ['campus/faculty', 'Faculty Cabins', 'user', /^campus\/faculty/],
+          ['campus/search', 'Campus Search', 'search', /^campus\/search/],
+          ['events', 'Events', 'calendar', /^events/],
+          ['rooms', 'Rooms & Booking', 'ticket', /^rooms/],
+          ...(S.me ? [['my-bookings', 'My bookings', 'list', /^my-bookings/]] : []),
+          ...(isStaff() ? [['cameras', 'Cameras', 'video', /^cameras/], ['portal', 'Portal', 'shield', /^portal/]] : [])
+        ]
       : [];
   sub.hidden = !items.length;
   sub.innerHTML = html`<div class="subnav-in">${items.map(([h, l, ic, re]) => html`<a href="#/${h}" ${on(re)}>${icon(ic)}${l}</a>`)}</div>`.s;

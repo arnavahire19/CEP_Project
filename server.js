@@ -150,7 +150,16 @@ route('DELETE', '/api/admin/users/:id', 'admin', ({ params, user }) => {
 });
 
 // ---------- NGO Connect ----------
-const ngoOut = (r) => ({ ...r, categories: json(r.categories), focus: json(r.focus) });
+const ngoOut = (r) => ({
+  ...r,
+  categories: json(r.categories),
+  focus: json(r.focus),
+  head_name: r.head_name || '',
+  head_designation: r.head_designation || '',
+  source: r.source || '',
+  volunteering: r.volunteering || '',
+  donation_url: r.donation_url || '',
+});
 const rad = (d) => (d * Math.PI) / 180;
 const haversine = (a, b, c, d) => {
   const h = Math.sin(rad(c - a) / 2) ** 2 + Math.cos(rad(a)) * Math.cos(rad(c)) * Math.sin(rad(d - b) / 2) ** 2;
@@ -162,10 +171,24 @@ route('GET', '/api/ngo-meta', 'public', () => {
   const rows = db.prepare("SELECT state, city, categories FROM ngos WHERE status = 'approved'").all();
   const counts = {};
   for (const r of rows) for (const c of json(r.categories)) counts[c] = (counts[c] || 0) + 1;
+  const states = [...new Set([...rows.map((r) => r.state), ...Object.values(CITIES).map((c) => c[2])])].filter(Boolean).sort();
+  const cities = [...new Set([...rows.map((r) => r.city), ...Object.keys(CITIES)])].filter(Boolean).sort();
+  const citiesByState = {};
+  for (const r of rows) {
+    if (r.state && r.city) {
+      citiesByState[r.state] ||= new Set();
+      citiesByState[r.state].add(r.city);
+    }
+  }
+  const formattedCitiesByState = {};
+  for (const [st, set] of Object.entries(citiesByState)) {
+    formattedCitiesByState[st] = [...set].sort();
+  }
   return {
     categories: CATEGORIES.map((c) => ({ ...c, count: counts[c.slug] || 0 })),
-    states: [...new Set([...rows.map((r) => r.state), ...Object.values(CITIES).map((c) => c[2])])].sort(),
-    cities: Object.keys(CITIES).sort(),
+    states,
+    cities,
+    citiesByState: formattedCitiesByState,
   };
 });
 
@@ -173,12 +196,15 @@ route('GET', '/api/ngos', 'public', ({ query }) => {
   const q = (query.get('q') || '').toLowerCase().trim();
   const want = (query.get('category') || '').split(',').filter(Boolean);
   const state = query.get('state') || '';
+  const city = (query.get('city') || '').toLowerCase().trim();
   const lat = parseFloat(query.get('lat')), lng = parseFloat(query.get('lng'));
   const maxKm = parseFloat(query.get('maxKm'));
   const near = Number.isFinite(lat) && Number.isFinite(lng);
   let rows = db.prepare("SELECT * FROM ngos WHERE status = 'approved'").all().map(ngoOut)
-    .filter((r) => matchCats(r.categories, want) && (!state || r.state === state)
-      && (!q || [r.name, r.city, r.state, r.description, ...r.focus, ...r.categories].join(' ').toLowerCase().includes(q)));
+    .filter((r) => matchCats(r.categories, want)
+      && (!state || r.state === state)
+      && (!city || r.city.toLowerCase() === city)
+      && (!q || [r.name, r.city, r.state, r.head_name, r.head_designation, r.description, ...r.focus, ...r.categories].join(' ').toLowerCase().includes(q)));
   if (near) {
     for (const r of rows) r.distance_km = r.lat == null ? null : Math.round(haversine(lat, lng, r.lat, r.lng) * 10) / 10;
     if (Number.isFinite(maxKm)) rows = rows.filter((r) => r.distance_km != null && r.distance_km <= maxKm);
@@ -200,24 +226,37 @@ route('GET', '/api/ngos/:id', 'public', ({ params }) => {
 function ngoFields(b) {
   const city = str(b.city, 'city', { max: 80 });
   const known = Object.entries(CITIES).find(([k]) => k.toLowerCase() === city.toLowerCase());
-  const state = str(b.state, 'state', { max: 80, req: !known }) || known[1][2];
+  const state = str(b.state, 'state', { max: 80, req: !known }) || (known ? known[1][2] : '');
   const phone = str(b.phone, 'phone', { max: 30, req: false });
   if (phone && !/^[\d\s+()-]{5,30}$/.test(phone)) throw bad('Phone may only contain digits, spaces, + ( ) -');
   const em = str(b.email, 'email', { max: 200, req: false });
   if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) throw bad('Enter a valid contact email');
   const focus = Array.isArray(b.focus) ? b.focus : String(b.focus || '').split(',');
   return {
-    name: str(b.name, 'name', { max: 150 }), city: known ? known[0] : city, state,
-    lat: known ? known[1][0] : null, lng: known ? known[1][1] : null,
+    name: str(b.name, 'name', { max: 150 }),
+    head_name: str(b.head_name, 'head name', { max: 100, req: false }),
+    head_designation: str(b.head_designation, 'designation', { max: 100, req: false }),
+    city: known ? known[0] : city,
+    state,
+    lat: known ? known[1][0] : null,
+    lng: known ? known[1][1] : null,
     categories: JSON.stringify(cats(b.categories)),
     description: str(b.description, 'description', { max: 1500 }),
     focus: JSON.stringify(focus.map((f) => String(f).trim().slice(0, 80)).filter(Boolean).slice(0, 8)),
-    website: url(b.website, 'website'), phone, email: em, address: str(b.address, 'address', { max: 300, req: false }),
+    website: url(b.website, 'website'),
+    phone,
+    email: em,
+    address: str(b.address, 'address', { max: 300, req: false }),
+    source: str(b.source, 'source', { max: 200, req: false }) || 'User submission',
+    volunteering: str(b.volunteering, 'volunteering', { max: 500, req: false }),
+    donation_url: url(b.donation_url, 'donation URL'),
   };
 }
-const NGO_COLS = 'name,city,state,lat,lng,categories,description,focus,website,phone,email,address';
+const NGO_COLS = 'name,head_name,head_designation,city,state,lat,lng,categories,description,focus,website,phone,email,address,source,volunteering,donation_url';
 route('POST', '/api/ngos', 'user', ({ body, user }) => {
   const f = ngoFields(body);
+  const dup = db.prepare('SELECT 1 FROM ngos WHERE LOWER(TRIM(name)) = LOWER(?) AND (LOWER(TRIM(state)) = LOWER(?) OR LOWER(TRIM(city)) = LOWER(?))').get(f.name, f.state, f.city);
+  if (dup) throw new HttpError(409, 'An NGO with this name in this state or city is already registered or awaiting review');
   const status = user.role === 'admin' ? 'approved' : 'pending';
   const r = db.prepare(`INSERT INTO ngos (${NGO_COLS},status,submitted_by) VALUES (${NGO_COLS.split(',').map(() => '?').join(',')},?,?)`)
     .run(...NGO_COLS.split(',').map((c) => f[c]), status, user.id);
@@ -269,7 +308,9 @@ route('PUT', '/api/schemes/:id', 'admin', ({ params, body }) => {
 });
 route('DELETE', '/api/schemes/:id', 'admin', ({ params }) => { db.prepare('DELETE FROM schemes WHERE id=?').run(idParam(params.id)); return { ok: true }; });
 
-// ---------- rooms ----------
+// ---------- rooms & campus directory ----------
+const facOut = (f) => ({ ...f, subjects: json(f.subjects) });
+
 function assertRoomFree(roomId, day, start, end, excludeEvent = 0) {
   const room = db.prepare('SELECT * FROM rooms WHERE id = ?').get(roomId);
   if (!room) throw bad('Unknown room');
@@ -277,7 +318,23 @@ function assertRoomFree(roomId, day, start, end, excludeEvent = 0) {
   const busy = cells.find((c) => c.s !== 'free' && c.s !== 'past' && c.h * 60 < toMin(end) && (c.h + 1) * 60 > toMin(start));
   if (busy) throw new HttpError(409, `${room.name} is not free then (${busy.s}: ${busy.label})`);
 }
-route('GET', '/api/rooms', 'public', () => db.prepare('SELECT * FROM rooms ORDER BY building, name').all());
+
+route('GET', '/api/rooms', 'public', ({ query }) => {
+  const bld = query?.get('building') || '';
+  const flr = query?.get('floor');
+  const type = query?.get('type') || '';
+  const q = (query?.get('q') || '').toLowerCase().trim();
+  const bookable = query?.get('bookable');
+
+  let rows = db.prepare('SELECT * FROM rooms ORDER BY building, name').all();
+  if (bld) rows = rows.filter((r) => (r.building || '').toLowerCase() === bld.toLowerCase());
+  if (flr !== null && flr !== undefined && flr !== '') rows = rows.filter((r) => String(r.floor) === String(flr));
+  if (type) rows = rows.filter((r) => r.type === type);
+  if (bookable === '1') rows = rows.filter((r) => r.is_bookable === 1 && r.has_timetable === 1);
+  if (q) rows = rows.filter((r) => [r.name, r.room_code, r.official_code, r.suffix, r.building, r.type, r.department, r.facilities].join(' ').toLowerCase().includes(q));
+  return rows;
+});
+
 route('POST', '/api/rooms', 'admin', ({ body }) => {
   try {
     return { id: Number(db.prepare('INSERT INTO rooms (name,building,floor,capacity,type,facilities) VALUES (?,?,?,?,?,?)').run(
@@ -296,7 +353,131 @@ route('DELETE', '/api/rooms/:id', 'admin', ({ params }) => { db.prepare('DELETE 
 route('GET', '/api/availability', 'public', ({ query, user }) => {
   const day = query.get('date') || nowCampus().date;
   date(day, 'date');
-  return { date: day, now: nowCampus(), hours: HOURS, rooms: availability(day, { user }) };
+  const rooms = availability(day, { user });
+  const bookable = query.get('bookable');
+  if (bookable === '1') return { date: day, now: nowCampus(), hours: HOURS, rooms: rooms.filter((r) => r.is_bookable === 1 && r.has_timetable === 1) };
+  return { date: day, now: nowCampus(), hours: HOURS, rooms };
+});
+
+// ---------- Campus Building & Room Directory APIs ----------
+route('GET', '/api/campus/buildings', 'public', () => {
+  const blds = db.prepare('SELECT * FROM buildings ORDER BY sort_order, id').all();
+  return blds.map((b) => {
+    const rc = db.prepare('SELECT COUNT(*) n FROM rooms WHERE building = ? OR building_id = ?').get(b.name, b.id).n;
+    const fc = db.prepare('SELECT COUNT(*) n FROM faculty WHERE building = ? OR building_id = ?').get(b.name, b.id).n;
+    return {
+      ...b,
+      departments: json(b.departments),
+      floors_list: json(b.floors_list),
+      room_count: rc,
+      faculty_count: fc,
+    };
+  });
+});
+
+route('GET', '/api/campus/buildings/:id', 'public', ({ params }) => {
+  const id = idParam(params.id);
+  const b = db.prepare('SELECT * FROM buildings WHERE id = ?').get(id);
+  if (!b) throw new HttpError(404, 'Building not found');
+  const rooms = db.prepare('SELECT * FROM rooms WHERE building = ? OR building_id = ? ORDER BY floor, room_code, name').all(b.name, b.id);
+  const faculty = db.prepare('SELECT * FROM faculty WHERE building = ? OR building_id = ? ORDER BY floor, name').all(b.name, b.id).map(facOut);
+  return {
+    ...b,
+    departments: json(b.departments),
+    floors_list: json(b.floors_list),
+    rooms,
+    faculty,
+  };
+});
+
+route('GET', '/api/campus/rooms', 'public', ({ query }) => {
+  const q = (query.get('q') || '').toLowerCase().trim();
+  const bld = query.get('building') || '';
+  const bldId = parseInt(query.get('building_id')) || 0;
+  const floor = query.get('floor');
+  const type = query.get('type') || '';
+  const dept = (query.get('department') || '').toLowerCase().trim();
+  const bookable = query.get('bookable');
+
+  let rows = db.prepare('SELECT * FROM rooms ORDER BY building, floor, room_code, name').all();
+  if (bld) rows = rows.filter((r) => (r.building || '').toLowerCase() === bld.toLowerCase());
+  if (bldId) rows = rows.filter((r) => r.building_id === bldId);
+  if (floor !== null && floor !== undefined && floor !== '') rows = rows.filter((r) => String(r.floor) === String(floor));
+  if (type) rows = rows.filter((r) => r.type === type);
+  if (dept) rows = rows.filter((r) => (r.department || '').toLowerCase().includes(dept));
+  if (bookable === '1') rows = rows.filter((r) => r.is_bookable === 1 && r.has_timetable === 1);
+  if (bookable === '0') rows = rows.filter((r) => r.is_bookable === 0);
+  if (q) {
+    rows = rows.filter((r) => [r.name, r.room_code, r.official_code, r.suffix, r.building, r.type, r.department, r.facilities].join(' ').toLowerCase().includes(q));
+  }
+  return rows;
+});
+
+route('GET', '/api/campus/rooms/:id', 'public', ({ params }) => {
+  const r = db.prepare('SELECT * FROM rooms WHERE id = ?').get(idParam(params.id));
+  if (!r) throw new HttpError(404, 'Room not found');
+  const faculty = db.prepare("SELECT * FROM faculty WHERE room_id = ? OR (room_code != '' AND room_code = ?)").all(r.id, r.room_code || '---').map(facOut);
+  const building = r.building_id ? db.prepare('SELECT * FROM buildings WHERE id = ?').get(r.building_id) : db.prepare('SELECT * FROM buildings WHERE name = ?').get(r.building);
+  let availability_status = 'Availability not configured';
+  if (r.status === 'maintenance') availability_status = 'Under Maintenance';
+  else if (r.is_bookable === 0) availability_status = r.booking_restriction || 'Restricted Facility - Not Bookable';
+  else if (r.has_timetable === 1) availability_status = 'Available for Booking';
+
+  const tt = r.has_timetable === 1 ? db.prepare('SELECT * FROM timetable WHERE room_id = ? ORDER BY weekday, start_h').all(r.id) : [];
+
+  return {
+    ...r,
+    faculty,
+    building: building ? { ...building, departments: json(building.departments), floors_list: json(building.floors_list) } : null,
+    availability_status,
+    timetable: tt,
+  };
+});
+
+route('GET', '/api/campus/faculty', 'public', ({ query }) => {
+  const q = (query.get('q') || '').toLowerCase().trim();
+  const dept = (query.get('department') || '').toLowerCase().trim();
+  const bld = query.get('building') || '';
+  const floor = query.get('floor');
+
+  let rows = db.prepare('SELECT f.*, r.official_code, r.type AS room_type FROM faculty f LEFT JOIN rooms r ON r.id = f.room_id ORDER BY f.department, f.name').all().map(facOut);
+  if (dept) rows = rows.filter((f) => (f.department || '').toLowerCase().includes(dept));
+  if (bld) rows = rows.filter((f) => (f.building || '').toLowerCase() === bld.toLowerCase());
+  if (floor !== null && floor !== undefined && floor !== '') rows = rows.filter((f) => String(f.floor) === String(floor));
+  if (q) {
+    rows = rows.filter((f) => [f.name, f.designation, f.department, f.room_code, f.official_code, f.building].join(' ').toLowerCase().includes(q));
+  }
+  return rows;
+});
+
+route('GET', '/api/campus/faculty/:id', 'public', ({ params }) => {
+  const f = db.prepare('SELECT f.*, r.official_code, r.type AS room_type, r.name AS room_name FROM faculty f LEFT JOIN rooms r ON r.id = f.room_id WHERE f.id = ?').get(idParam(params.id));
+  if (!f) throw new HttpError(404, 'Faculty member not found');
+  const building = f.building_id ? db.prepare('SELECT * FROM buildings WHERE id = ?').get(f.building_id) : db.prepare('SELECT * FROM buildings WHERE name = ?').get(f.building);
+  return {
+    ...facOut(f),
+    building: building ? { ...building, departments: json(building.departments), floors_list: json(building.floors_list) } : null,
+  };
+});
+
+route('GET', '/api/campus/search', 'public', ({ query }) => {
+  const q = (query.get('q') || '').toLowerCase().trim();
+  if (!q) return { buildings: [], rooms: [], faculty: [] };
+
+  const buildings = db.prepare('SELECT * FROM buildings ORDER BY sort_order').all()
+    .map((b) => ({ ...b, departments: json(b.departments), floors_list: json(b.floors_list) }))
+    .filter((b) => [b.name, b.code, b.description, ...b.departments].join(' ').toLowerCase().includes(q))
+    .slice(0, 10);
+
+  const rooms = db.prepare('SELECT * FROM rooms ORDER BY building, floor, room_code').all()
+    .filter((r) => [r.name, r.room_code, r.official_code, r.suffix, r.building, r.type, r.department, r.facilities].join(' ').toLowerCase().includes(q))
+    .slice(0, 30);
+
+  const faculty = db.prepare('SELECT f.*, r.official_code FROM faculty f LEFT JOIN rooms r ON r.id = f.room_id ORDER BY f.name').all().map(facOut)
+    .filter((f) => [f.name, f.designation, f.department, f.room_code, f.official_code, f.building].join(' ').toLowerCase().includes(q))
+    .slice(0, 30);
+
+  return { buildings, rooms, faculty };
 });
 
 // ---------- timetable ----------
@@ -331,6 +512,8 @@ route('POST', '/api/bookings', 'user', ({ body, user }) => {
   if (day > addDays(today, 30)) throw bad('Bookings open up to 30 days ahead');
   const room = db.prepare('SELECT * FROM rooms WHERE id = ?').get(room_id);
   if (!room) throw new HttpError(404, 'Room not found');
+  if (room.is_bookable === 0) throw bad(`${room.name} is a restricted facility (${room.booking_restriction || 'Restricted'}) and cannot be booked`);
+  if (room.has_timetable === 0) throw bad(`${room.name} does not have booking availability configured`);
   const attendees = int(body.attendees ?? 1, 'attendees', 1, 10000);
   if (attendees > room.capacity) throw bad(`${room.name} holds at most ${room.capacity} people`);
   const purpose = str(body.purpose, 'purpose', { max: 200 });
@@ -444,13 +627,17 @@ route('GET', '/api/cameras/log', 'admin', () => db.prepare(`SELECT l.id, l.at, c
 route('GET', '/api/stats', 'public', () => {
   const now = nowCampus(), h = Math.floor(now.minutes / 60);
   const rooms = availability(now.date);
+  const bookableRooms = rooms.filter((r) => r.is_bookable !== 0 && r.has_timetable !== 0);
   return {
     ngos: db.prepare("SELECT COUNT(*) n FROM ngos WHERE status='approved'").get().n,
     schemes: db.prepare('SELECT COUNT(*) n FROM schemes').get().n,
     upcoming_events: db.prepare('SELECT COUNT(*) n FROM events WHERE date >= ?').get(now.date).n,
-    rooms: rooms.length,
+    rooms: bookableRooms.length,
+    total_campus_rooms: rooms.length,
+    buildings: db.prepare('SELECT COUNT(*) n FROM buildings').get().n,
+    faculty: db.prepare('SELECT COUNT(*) n FROM faculty').get().n,
     open: h >= OPEN_H && h < CLOSE_H,
-    rooms_free_now: rooms.filter((r) => r.cells.find((c) => c.h === h)?.s === 'free').length,
+    rooms_free_now: bookableRooms.filter((r) => r.cells.find((c) => c.h === h)?.s === 'free').length,
     pending_bookings: db.prepare("SELECT COUNT(*) n FROM bookings WHERE status='pending'").get().n,
     weekday: weekdayOf(now.date),
   };
